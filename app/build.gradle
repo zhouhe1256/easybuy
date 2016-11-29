@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId 'com.gaiya.easybuy'
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file('keystore/ebuy.jks')
+            storePassword 'gaiyaeasybuy'
+            keyAlias '20'
+            keyPassword 'gaiyaeasybuy'
+        }
+        debug {
+            storeFile file('keystore/ebuy.jks')
+            storePassword 'gaiyaeasybuy'
+            keyAlias '20'
+            keyPassword 'gaiyaeasybuy'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/GetuiSdk2.4.1.0.jar')
+    compile 'com.android.support:support-v4:23.1.0'
+}

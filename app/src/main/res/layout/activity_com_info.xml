@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:id="@+id/ll"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/com_notify"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="您的信息未完善,请完善后提交审核!"
+                android:textColor="@color/sub_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="公司名称" />
+
+                <EditText
+                    android:id="@+id/info_com_name"
+
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="公司类型" />
+
+
+                <Spinner
+                    android:id="@+id/info_com_type"
+                    style="@style/edit_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/arror"
+                    android:layout_width="14dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="right"
+                    android:src="@drawable/jiantou_down" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="公司简介" />
+
+                <EditText
+                    android:id="@+id/info_com_introduce"
+
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:hint=""
+                    android:maxLines="3" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="公司网址" />
+
+                <EditText
+                    android:id="@+id/info_com_address"
+
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="营业执照" />
+
+                <ImageView
+                    android:id="@+id/info_com_img"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_tianjia" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="联系人" />
+
+                <EditText
+                    android:id="@+id/info_name"
+
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="联系电话" />
+
+                <EditText
+                    android:id="@+id/info_phone"
+
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint=""
+                    android:inputType="number" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/main_title_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="邮箱" />
+
+                <EditText
+                    android:id="@+id/info_email"
+
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <LinearLayout
+                android:id="@+id/catalog_com"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/stroke_bg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/main_title_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:text="主营业务:" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <com.gaiya.easybuy.view.XCFlowLayout
+
+                            android:id="@+id/flowlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </com.gaiya.easybuy.view.XCFlowLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/spinner_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/stroke_bg"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinner1"
+                                style="@style/spinner_style"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:animationCache="true"
+                                android:drawSelectorOnTop="true"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="right"
+                                android:src="@drawable/jiantou_down" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/stroke_bg"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinner2"
+                                style="@style/spinner_style"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:animationCache="true"
+                                android:drawSelectorOnTop="true"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="right"
+                                android:src="@drawable/jiantou_down" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/stroke_bg"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinner3"
+                                style="@style/spinner_style"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:animationCache="true"
+                                android:drawSelectorOnTop="true"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="right"
+                                android:src="@drawable/jiantou_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/add_subject"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/tianjia" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/yellow_big_selector"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_title" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">柠檬豆</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!--请求图片前缀配置 http://192.168.1.22:8090
+    请求接口前缀配置 http://192.168.1.22:8090
+    请求HTML5前缀配置 http://192.168.1.22:8090-->
+    <!--<string name="host">http://192.168.1.22:8080</string>-->
+    <!--<string name="host_img">http://192.168.1.22:8090</string>-->
+    <!--<string name="host_html">http://192.168.1.22:8090/</string>-->
+
+
+    <!--<string name="host">http://192.168.1.98:8080</string>-->
+    <!--<string name="host_img">http://192.168.1.98:8080</string>-->
+    <!--<string name="host_html">http://192.168.1.98:8080/</string>-->
+
+
+    <!--测试-->
+    <!--<string name="host">http://210.56.193.124:8090</string>-->
+    <!--<string name="host">http://192.168.23.1:8080</string>-->
+     <!--正式-->
+    <string name="host">http://182.92.31.137:80</string>
+
+    <!-- http://192.168.1.98:8080/-->
+
+    <string name="find_pwd_note">短信已发送到您的手机,如在60秒秒内还没有收到短信验证码,请重新获取</string>
+    <string name="launchGallery">图库选取</string>
+    <string name="lanuchCapture">拍照选取</string>
+    <string name="cancel">取消</string>
+    <string name="copyright_text">copyright@2015.柠檬豆(www.ningmengdou.com) 版权所有 </string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="image_view_tag">ImageViewAdapter</string>
+</resources>

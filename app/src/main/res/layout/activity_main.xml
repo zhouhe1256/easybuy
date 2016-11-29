@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.gaiya.easybuy.tabView.TabNavigateLayout
+        android:id="@+id/tabNavigateLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_bottom_color">
+
+        <com.gaiya.easybuy.tabView.TabNavigateItem
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            app:image_height="25dp"
+            app:image_width="25dp"
+            app:src="@drawable/item_0"
+            android:focusable="true"
+            app:text="首页"
+            app:text_colors="@drawable/textcolor" />
+
+        <com.gaiya.easybuy.tabView.TabNavigateItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:image_height="25dp"
+            app:image_width="25dp"
+            app:src="@drawable/item_1"
+            app:text="项目"
+            app:text_colors="@drawable/textcolor" />
+
+        <com.gaiya.easybuy.tabView.TabNavigateItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:image_height="25dp"
+            app:image_width="25dp"
+            app:src="@drawable/item_2"
+            app:text="消息"
+            app:text_colors="@drawable/textcolor" />
+
+        <com.gaiya.easybuy.tabView.TabNavigateItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            app:image_height="25dp"
+            app:image_width="25dp"
+            app:src="@drawable/item_3"
+            app:text="我的"
+            app:text_colors="@drawable/textcolor" />
+    </com.gaiya.easybuy.tabView.TabNavigateLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabNavigateLayout1"
+        android:layout_alignLeft="@+id/tabNavigateLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tabNavigateLayout1"
+        android:descendantFocusability="beforeDescendants"
+        android:background="#cdcdcd">
+
+    </FrameLayout>
+
+</RelativeLayout>

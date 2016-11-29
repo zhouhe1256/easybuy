@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_t">#ffe8ecef</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="red">#FF0033</color>
+    <color name="blue">#277FF4</color>
+    <color name="whites">#ffffff</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="yellow">#F99503</color>
+    <color name="gray_color">#ffe8ecef</color>
+    <color name="main_bg_color">#f0eff5</color>
+    <color name="title_color">#02bbee</color>
+    <color name="sub_color">#fe8c6d</color>
+    <color name="biaoqian_color">#555566</color>
+    <color name="title_text_color">#333333</color>
+    <color name="main_text_color">#666666</color>
+    <color name="remind_color">#999999</color>
+    <color name="main_bottom_color">#555566</color>
+    <color name="line_color">#e4e4e4</color>
+<color name="call_color">#633333</color>
+
+</resources>

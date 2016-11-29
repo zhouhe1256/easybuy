@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:orientation="vertical">
+
+        <View
+            style="@style/hor_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/input_user_pwd"
+                style="@style/edit_text_style"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="请输密码"
+                android:inputType="numberPassword"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/switch_off"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            style="@style/hor_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/input_agian_user_pwd"
+                style="@style/edit_text_style"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="再次输入密码"
+                android:inputType="numberPassword"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/switch_off"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            style="@style/hor_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/commit_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/yellow_big_selector"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_title" />
+</LinearLayout>
